@@ -1,6 +1,8 @@
 // src/app/page.tsx
 import Link from "next/link";
 
+import {API_URL} from "@/lib/config"
+
 export const metadata = {
   title: "Savants — Auth Test",
   description: "Next.js frontend to test GitHub/GitLab authentication against the Savants API",
@@ -12,7 +14,7 @@ export default function HomePage() {
       <div className="max-w-xl w-full text-center">
         <h1 className="text-4xl font-bold tracking-tight">Savants Auth Test</h1>
         <p className="mt-3 text-muted-foreground">
-          Backend: <code className="px-2 py-1 text-black rounded bg-gray-100">{process.env.NEXT_PUBLIC_API_URL}</code>
+          Backend: <code className="px-2 py-1 text-black rounded bg-gray-100">{API_URL}</code>
         </p>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
